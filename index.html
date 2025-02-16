@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparative Genome Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Comparative Genome Analysis: Pathogenic vs Non-Pathogenic Strains</h2>
+    
+    <h3>E. coli Strains</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Pathogenicity</th>
+            <th>Virulence Factors</th>
+            <th>Plasmids</th>
+            <th>Resistance Genes</th>
+        </tr>
+        <tr>
+            <td>O157:H7</td>
+            <td>Pathogenic</td>
+            <td>astA, cdtB, efa1, hra, iha, stx1A, stx1B, stx2A, stxB, traT, espA, espB, espF, espJ, gad, chuA, eae, iss, nleA, nleB, nleC, ompT, tccP, terC, tir, stx1, stx2</td>
+            <td>Col(MG828), Col156, Col8282, IncC, IncFIA, IncFIB, IncFII, IncFII(pCoo), IncII(pSFO), Inc1-I(Alpha), IncI2(Delta), p0111 and pEC4115</td>
+            <td>tet(B), sul2, aph(3″)-Ib, aph(6)-Id, mdf(A)</td>
+        </tr>
+        <tr>
+            <td>O104:H4</td>
+            <td>Pathogenic</td>
+            <td>P22 bacteriophage, R-type pyocin</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>O26:H11 (STX +VE)</td>
+            <td>Pathogenic</td>
+            <td>eae, tir, cif, espA, espB, fimD, fimF-H, gadX, iss, lpfA</td>
+            <td>aec30</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>O26:H11 (STX -VE)</td>
+            <td>Pathogenic</td>
+            <td>ehxA-/katP-/espP-/etpD-</td>
+            <td>Z2098</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>O121:H9</td>
+            <td>Pathogenic</td>
+            <td>adk, fumC, gyrB, icd, mdh, purA, recA</td>
+            <td>ydfJ, ttcA, pUSDA5905-1, p12579-1, P12579-4, TB182A-3, pDEC5D-2</td>
+            <td>sul2, aph(3″)-Ib, aph(6)-Id</td>
+        </tr>
+    </table>
+    
+    <h3>Salmonella Strains</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Pathogenicity</th>
+            <th>Virulence Factors</th>
+        </tr>
+        <tr>
+            <td>Salmonella Typhi str. CT18</td>
+            <td>Pathogen</td>
+            <td>OmpA, OmpC, OmpF, CTL, HTL, Bcell, MESV, GGGS, EAAK</td>
+        </tr>
+        <tr>
+            <td>Salmonella enterica subsp. enterica serovar Typhimurium str LT2</td>
+            <td>Pathogen</td>
+            <td>isrI, phoP, phoQ, ffs, STnc700, glmY, csrB, STnc3150, sraF, Spot42_spf</td>
+        </tr>
+        <tr>
+            <td>Salmonella enterica Serovar Paratyphi A ATCC 9150</td>
+            <td>Pathogen</td>
+            <td>IFN-γ, TNF-α, IL-6, IL-8, IL-10, IL-15</td>
+        </tr>
+    </table>
+</body>
+</html>
