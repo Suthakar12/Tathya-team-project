@@ -1,0 +1,206 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffffff, #f2f2f2);
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+/* Logo (Left of Title) */
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Title */
+h1 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Navigation Links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background: white;
+    color: black;
+}
+
+/* Content Box */
+.container {
+    max-width: 70%;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+    margin-top: 30px;
+}
+
+/* Paragraph */
+p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* Search Section */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.search-label {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+/* Input Field */
+.search-box {
+    width: 350px;
+    padding: 12px;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+}
+
+/* Search Button with Icon */
+.search-button {
+    font-size: 1.2em;
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-button i {
+    font-size: 1.2em;
+}
+
+.search-button:hover {
+    background-color: #333;
+}
+
+/* Compare Page Layout */
+.compare-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    width: 90%;
+}
+
+/* Left Content */
+.left-content {
+    width: 50%;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+/* Right Content */
+.right-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Make search boxes align properly */
+.search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.search-label {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .compare-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-label {
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
